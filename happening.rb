@@ -25,4 +25,4 @@ files.reverse.each do |file|
 	end
 end
 
-File.open("printed_index", 'a+') { |file| file.write(new_files.join("\n")) }
+File.open("printed_index", 'a+') { |file| file.write(new_files.join("\n") + "\n") }
